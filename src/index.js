@@ -11,8 +11,6 @@ import './index.css';
 
 const store = createStore(reducer);
 
-console.log(store);
-
 ReactDOM.render(
   <Router>
     <Provider store={store}>

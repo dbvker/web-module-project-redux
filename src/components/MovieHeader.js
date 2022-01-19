@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { toggleFavorites } from '../actions/favoritesActions';
 
 const MovieHeader = (props) => {
-    const { appTitle, displayFavorites } = props;
+    const { appTitle, displayFavorites, toggleFavorites } = props;
 
     const toggleFavoritesHandler = () => {
-        props.toggleFavorites()
+        toggleFavorites()
     };
     
     return(<div className="table-title">

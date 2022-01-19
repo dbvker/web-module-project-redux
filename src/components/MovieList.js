@@ -5,7 +5,7 @@ import MovieListItem from './MovieListItem';
 import MovieFooter from './MovieFooter';
 
 const MovieList = (props)=> {
-    const movies = props.movies;
+    const { movies } = props;
 
     return (
         <div className="col">

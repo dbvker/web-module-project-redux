@@ -6,6 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 
 const AddMovieForm = (props) => {
     const { push } = useHistory();
+    const { addMovie } = props;
 
     const [movie, setMovie] = useState({
         title: "",
@@ -22,8 +23,8 @@ const AddMovieForm = (props) => {
         });
     }
 
-    const handleSubmit = (e) => {
-        props.addMovie(movie);
+    const handleSubmit = () => {
+        addMovie(movie);
         push('/');
     }
 
